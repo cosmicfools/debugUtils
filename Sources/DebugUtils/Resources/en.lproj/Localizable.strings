@@ -1,0 +1,12 @@
+//
+//  Localizable.strings
+//  
+//
+//  Created by Francisco Javier Trujillo Mata on 14/03/2022.
+//
+
+// MainDebugViewController
+"MainDebugViewController::Title" = "Main Debug";
+
+// InformationDebugViewController
+"InformationDebugViewController::Title" = "Information";
