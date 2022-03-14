@@ -1,2 +1,3 @@
-# debugView
-Collection of tools that helps for debugging your app internally
+# DebugUtils
+
+Collection of tools that helps for debugging your app internally.
