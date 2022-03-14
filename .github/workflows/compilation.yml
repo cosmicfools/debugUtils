@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+
+jobs:
+  build:
+    runs-on: macos-latest
+        
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Run test (in Release, with optimization level)
+      run: |
+        xcodebuild test -scheme DebugUtils -destination 'name=iPhone 11'
+
+    - name: Compile project (in Release)
+      run: |
+        xcodebuild build -scheme DebugUtils -destination 'name=iPhone 11'
