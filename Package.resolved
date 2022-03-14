@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "DeviceKit",
+        "repositoryURL": "https://github.com/devicekit/DeviceKit",
+        "state": {
+          "branch": null,
+          "revision": "da57c444cbb7b6159aa871534d4cf2616d1d55c6",
+          "version": "4.5.2"
+        }
+      },
+      {
         "package": "ModuleServices",
         "repositoryURL": "https://github.com/cosmicfools/ModuleServices.git",
         "state": {

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import ModuleServices
 
-public class MainDebugViewController: ModulesViewController {
+class InformationDebugViewController: ModulesViewController {
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: Bundle.module)
     }
@@ -18,33 +18,24 @@ public class MainDebugViewController: ModulesViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func createModules() {
-        super.createModules()
-        
-        loadOptionModule()
-        loadActionModule()
-    }
-    
-    public override func setupStyle() {
+    override func setupStyle() {
         super.setupStyle()
         
         tableView?.tableFooterView = UIView(frame: .zero)
         tableView?.backgroundColor = .white
         view.backgroundColor = .white
-        self.title = String(describing: self)
+        title = String(describing: Self.classForCoder())
+    }
+    
+    override func createModules() {
+        super.createModules()
+        
+        loadInfomationModule()
     }
 }
 
 // MARK: - Private Methods
-private extension MainDebugViewController {
-    func loadOptionModule() {
-        let module = MainDebugViewOptionModule(tableView: self.tableView!)
-        module.configure(defaultAccesory: .disclosureIndicator)
-        appendModule(module)
-//        module.delegate = self
-    }
-    
-    func loadActionModule() {
-        
+private extension InformationDebugViewController {
+    func loadInfomationModule() {
     }
 }
