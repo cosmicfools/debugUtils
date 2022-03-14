@@ -10,6 +10,14 @@ import UIKit
 import ModuleServices
 
 public class MainDebugViewController: ModulesViewController {
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: Bundle.module)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     public override func createModules() {
         super.createModules()
         
