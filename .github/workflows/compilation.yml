@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Run test (in Release, with optimization level)
+    - name: Run test
       run: |
         xcodebuild test -scheme DebugUtils -destination 'name=iPhone 11'
 

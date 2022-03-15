@@ -31,7 +31,7 @@ public class MainDebugViewController: ModulesViewController {
         tableView?.tableFooterView = UIView(frame: .zero)
         tableView?.backgroundColor = .white
         view.backgroundColor = .white
-        title = Bundle.module.localizedString(forKey: "MainDebugViewController::Title", value: nil, table: nil)
+        title = L10n.mainDebugViewControllerTitle
     }
     
     public override func viewWillAppear(_ animated: Bool) {

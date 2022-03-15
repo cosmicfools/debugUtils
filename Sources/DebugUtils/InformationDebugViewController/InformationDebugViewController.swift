@@ -24,7 +24,7 @@ class InformationDebugViewController: ModulesViewController {
         tableView?.tableFooterView = UIView(frame: .zero)
         tableView?.backgroundColor = .white
         view.backgroundColor = .white
-        title = Bundle.module.localizedString(forKey: "InformationDebugViewController::Title", value: nil, table: nil)
+        title = L10n.informationDebugViewControllerTitle
     }
     
     override func createModules() {
