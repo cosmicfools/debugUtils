@@ -20,7 +20,7 @@ jobs:
       run: |
         xcodebuild build -scheme DebugUtils -destination 'name=iPhone 11'
   
-    linter:
+  swiftlint:
     runs-on: ubuntu-latest
     container: ghcr.io/realm/swiftlint:latest
         
@@ -30,3 +30,19 @@ jobs:
     - name: Execute linter
       run: |
         swiftlint --strict
+    
+  swiftgen:
+    runs-on: macos-latest
+        
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install swiftgen
+      run: |
+        brew update
+        brew install swiftgen
+
+    - name: Execute swiftgen and fail if changes pending
+      run: |
+        swiftgen
+        git diff --exit-code
