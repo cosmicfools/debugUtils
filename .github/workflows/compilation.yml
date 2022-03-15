@@ -19,3 +19,14 @@ jobs:
     - name: Compile project (in Release)
       run: |
         xcodebuild build -scheme DebugUtils -destination 'name=iPhone 11'
+  
+    linter:
+    runs-on: ubuntu-latest
+    container: ghcr.io/realm/swiftlint:latest
+        
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Execute linter
+      run: |
+        swiftlint --strict

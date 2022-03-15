@@ -1,13 +1,12 @@
 //
 //  File.swift
-//  
+//
 //
 //  Created by Francisco Javier Trujillo Mata on 14/03/2022.
 //
 
 import Foundation
 import UIKit
-
 
 enum MainDebugViewOption: String, CaseIterable {
     case Information

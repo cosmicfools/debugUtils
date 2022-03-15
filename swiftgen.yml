@@ -1,0 +1,6 @@
+strings:
+    inputs: Sources/DebugUtils/Resources/Translations/en.lproj
+    filter: .+\.strings$
+    outputs:
+        - templateName: structured-swift5
+          output: Sources/DebugUtils/Generated/StringsGen.swift
