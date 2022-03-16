@@ -10,3 +10,22 @@
 
 // InformationDebugViewController
 "InformationDebugViewController::Title" = "Information";
+
+// InformationModule
+"InformationModule::Title" = "Device Information";
+"InformationModule::Version" = "App. Version";
+"InformationModule::Description" = "Description";
+"InformationModule::Name" = "Name";
+"InformationModule::Model" = "Model";
+"InformationModule::LocalizedModel" = "Localized Model";
+"InformationModule::Identifier" = "Identifier";
+"InformationModule::SystemName" = "SystemName";
+"InformationModule::SystemVersion" = "SystemVersion";
+"InformationModule::ScreenInches" = "ScreenInches";
+"InformationModule::PPI" = "PPI";
+"InformationModule::Brightness" = "Brightness";
+"InformationModule::Battery Level" = "Battery Level";
+"InformationModule::Simulator" = "Simulator";
+"InformationModule::TouchID" = "TouchID";
+"InformationModule::FaceID" = "FaceID";
+"InformationModule::BiometricSensor" = "Biometric Sensor";

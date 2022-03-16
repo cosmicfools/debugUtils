@@ -12,6 +12,40 @@ import Foundation
 internal enum L10n {
   /// Information
   internal static let informationDebugViewControllerTitle = L10n.tr("Localizable", "InformationDebugViewController::Title")
+  /// Battery Level
+  internal static let informationModuleBatteryLevel = L10n.tr("Localizable", "InformationModule::Battery Level")
+  /// Biometric Sensor
+  internal static let informationModuleBiometricSensor = L10n.tr("Localizable", "InformationModule::BiometricSensor")
+  /// Brightness
+  internal static let informationModuleBrightness = L10n.tr("Localizable", "InformationModule::Brightness")
+  /// Description
+  internal static let informationModuleDescription = L10n.tr("Localizable", "InformationModule::Description")
+  /// FaceID
+  internal static let informationModuleFaceID = L10n.tr("Localizable", "InformationModule::FaceID")
+  /// Identifier
+  internal static let informationModuleIdentifier = L10n.tr("Localizable", "InformationModule::Identifier")
+  /// Localized Model
+  internal static let informationModuleLocalizedModel = L10n.tr("Localizable", "InformationModule::LocalizedModel")
+  /// Model
+  internal static let informationModuleModel = L10n.tr("Localizable", "InformationModule::Model")
+  /// Name
+  internal static let informationModuleName = L10n.tr("Localizable", "InformationModule::Name")
+  /// PPI
+  internal static let informationModulePPI = L10n.tr("Localizable", "InformationModule::PPI")
+  /// ScreenInches
+  internal static let informationModuleScreenInches = L10n.tr("Localizable", "InformationModule::ScreenInches")
+  /// Simulator
+  internal static let informationModuleSimulator = L10n.tr("Localizable", "InformationModule::Simulator")
+  /// SystemName
+  internal static let informationModuleSystemName = L10n.tr("Localizable", "InformationModule::SystemName")
+  /// SystemVersion
+  internal static let informationModuleSystemVersion = L10n.tr("Localizable", "InformationModule::SystemVersion")
+  /// Device Information
+  internal static let informationModuleTitle = L10n.tr("Localizable", "InformationModule::Title")
+  /// TouchID
+  internal static let informationModuleTouchID = L10n.tr("Localizable", "InformationModule::TouchID")
+  /// App. Version
+  internal static let informationModuleVersion = L10n.tr("Localizable", "InformationModule::Version")
   /// Main Debug
   internal static let mainDebugViewControllerTitle = L10n.tr("Localizable", "MainDebugViewController::Title")
 }
